@@ -1,13 +1,9 @@
-console.log("Heloo")
-
-import express from "express";
-import {
-    json
-} from "body-parser";
-import axios from "axios";
+const expres = require("express");
+const body_parser = require("body-parser");
+const axios = require("axios");
 require('dotenv').config();
 
-const app = express().use(json());
+const app = expres().use(body_parser.json());
 const token = process.env.TOKEN;
 const mytoken = process.env.MYTOKEN;
 
