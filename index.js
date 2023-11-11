@@ -76,5 +76,5 @@ app.get("/webhook", (req, res) => {
 
 
 
-app.use('/.netlify/functions/api', router);
-module.exports.handler = serverless(app);
+// app.use('/.netlify/functions/api', router);
+// module.exports.handler = serverless(app);
