@@ -2,6 +2,8 @@ const express = require('express')
 const body_parser = require("body-parser");
 const axios = require("axios");
 const router = express.Router();
+
+const serverless = require('serverless-http')
 require('dotenv').config();
 
 const app = express().use(body_parser.json());
