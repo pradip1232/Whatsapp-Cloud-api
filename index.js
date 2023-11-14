@@ -1,12 +1,13 @@
 const express = require('express')
-const body_parser = require("body-parser");
-const axios = require("axios");
+// const body_parser = require("body-parser");
+// const axios = require("axios");
 const router = express.Router();
 
 const serverless = require('serverless-http')
 require('dotenv').config();
-
-const app = express().use(body_parser.json());
+// const app = express().use(body_parser.json());
+const app = express();
+app.use(express.json());
 const token = process.env.TOKEN;
 const mytoken = process.env.MYTOKEN;
 
@@ -14,6 +15,10 @@ app.listen(process.env.PORT, () => {
     console.log("Its is working...");
 });
 
+
+app.get(8000, () => {
+    console.log("Hee this is localhost");
+})
 app.get("/webhook", (req, res) => {
 
 
