@@ -23,6 +23,5 @@
     "build": "netlify deploy --prod"
   },
   "author": "",
-  "license": "ISC",
-  "devDependencies": {}
+  "license": "ISC"
 }
