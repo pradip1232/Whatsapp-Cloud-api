@@ -1,5 +1,6 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "@netlify/functions": "^2.4.0",
     "@types/express": "^4.17.21",
     "axios": "^1.6.1",
@@ -24,4 +25,9 @@
   },
   "author": "",
   "license": "ISC"
+=======
+    "axios": "^1.6.0",
+    "express": "^4.18.2"
+  }
+>>>>>>> 6430ca66997d80f1e6c29d8cf0b9dac6e0ec7dce
 }
